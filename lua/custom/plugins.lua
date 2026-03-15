@@ -119,4 +119,12 @@ return {
     lazy = false,
     priority = 100,
   },
+
+  {
+    "ray-x/web-tools.nvim",
+    lazy = false,
+    config = function()
+      require("web-tools").setup({})
+    end,
+  },
 }

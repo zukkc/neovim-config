@@ -15,6 +15,10 @@ map("n", "<leader>pd", function()
   vim.cmd("NeovimProjectDiscover")
 end, { desc = "Open projects list" })
 
+map("n", "<leader>ls", function()
+  vim.cmd("BrowserPreview")
+end, { desc = "Turn on live server for web" })
+
 
 map("n", "<C-b>", function()
   vim.cmd("wa")
