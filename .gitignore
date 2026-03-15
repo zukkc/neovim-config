@@ -1,0 +1,27 @@
+# Neovim swap / backup / undo
+*.swp
+*.swo
+*~
+*.un~
+
+Session.vim
+Sessionx.vim
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.lazy/
+plugin/packer_compiled.lua
+mason/
+bin/
+.cache/
+tmp/
+temp/
+.luarocks/
+lua_modules/
+coverage/
+.coverage
+pytest_cache/
+scratch/
+notes-private/
