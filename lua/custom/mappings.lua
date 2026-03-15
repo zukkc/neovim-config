@@ -11,8 +11,8 @@ map("n", "<leader>fp", function()
   vim.cmd("edit " .. path)
 end, { desc = "Open external file" })
 
-map("n", "<leader>pr", function()
-  vim.cmd(":Telescope projects")
+map("n", "<leader>pd", function()
+  vim.cmd("NeovimProjectDiscover")
 end, { desc = "Open projects list" })
 
 

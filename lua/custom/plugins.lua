@@ -96,13 +96,27 @@ return {
   },
 
   {
-    "ahmedkhalf/project.nvim",
-    config = function()
-      require("project_nvim").setup({
-        detection_methods = { "pattern" },
-        patterns = { ".git", "package.json", "Makefile", "go.mod" },
-      })
-      require("telescope").load_extension("projects")
+    "coffebar/neovim-project",
+    opts = {
+      projects = {
+        "~/projects/*",
+        "~/.config/*",
+      },
+      picker = {
+        type = "telescope",
+      }
+    },
+    init = function()
+      vim.opt.sessionoptions:append("globals")
     end,
+    dependencies = {
+      { "nvim-lua/plenary.nvim" },
+      { "nvim-telescope/telescope.nvim", tag = "0.1.4" },
+      { "ibhagwan/fzf-lua" },
+      { "folke/snacks.nvim" },
+      { "Shatur/neovim-session-manager" },
+    },
+    lazy = false,
+    priority = 100,
   },
 }
