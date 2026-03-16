@@ -47,6 +47,12 @@ local servers = {
       "typescriptreact",
     },
   },
+  ts_ls = {
+    filetypes = {
+      "javascript",
+      "typescript",
+    },
+  },
   tailwindcss = {
     filetypes = {
       "css",
